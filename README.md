@@ -20,27 +20,75 @@ A simple and efficient Python tool to extract multiple ZIP files at once using a
 ## 🛠️ Requirements
 
 - Python 3.6 or higher  
+- Git installed  
 
-### 📦 Required Libraries
+Required Libraries:
+- tqdm  
+- colorama  
 
-tqdm  
-colorama  
+---
 
-Install using:
+## 📥 Complete Installation Guide
 
-pip install -r requirements.txt
+1. Clone the Repository
+
+   git clone https://github.com/rsamwilson2323-cloud/auto-multi-zip-extractor.git
+
+2. Navigate to Project Folder
+
+   cd auto-multi-zip-extractor
+
+---
+
+## 🧪 Optional Virtual Environment (Recommended)
+
+Windows:
+
+   python -m venv venv  
+   venv\Scripts\activate  
+
+Linux / macOS:
+
+   python3 -m venv venv  
+   source venv/bin/activate  
+
+---
+
+## 📦 Install Dependencies
+
+   pip install -r requirements.txt  
+
+If pip fails:
+
+   python -m pip install --upgrade pip  
+   pip install -r requirements.txt  
 
 ---
 
 ## ▶️ How to Run
 
-python "multi zip extractor.py"
+   python "multi zip extractor.py"  
+
+If that doesn't work:
+
+   python3 "multi zip extractor.py"  
+
+---
+
+## 🖥️ How to Use
+
+1. Run the script  
+2. File dialog opens  
+3. Select multiple ZIP files  
+4. Click Open  
+5. Files extract automatically  
+6. Output folders are created  
 
 ---
 
 ## 📂 Project Structure
 
-Multi-ZIP-Extractor/  
+auto-multi-zip-extractor/  
 │── multi zip extractor.py  
 │── requirements.txt  
 │── README.md  
@@ -50,22 +98,21 @@ Multi-ZIP-Extractor/
 
 ## ⚙️ How It Works
 
-1. Opens a file dialog to select multiple ZIP files  
-2. Loops through each selected file  
-3. Creates a folder with the same name as the ZIP  
-4. Extracts all contents into that folder  
-5. Displays status messages in the console  
+- Uses Tkinter for file selection  
+- Uses zipfile module for extraction  
+- Uses tqdm for progress  
+- Uses colorama for colored output  
 
 ---
 
 ## 💡 Example
 
-If you select:
+Input:
 
 file1.zip  
 file2.zip  
 
-Output will be:
+Output:
 
 file1/  
 file2/  
@@ -75,18 +122,44 @@ file2/
 ## 🧠 Use Cases
 
 - Bulk ZIP extraction  
-- Organizing downloaded archives  
-- Handling project/resource files  
+- Organizing downloads  
+- Dataset extraction  
 - Automation workflows  
+
+---
+
+## ❗ Troubleshooting
+
+Python not found:
+
+   python --version  
+
+pip not working:
+
+   python -m ensurepip --upgrade  
+
+Tkinter error:
+
+Ubuntu:
+
+   sudo apt-get install python3-tk  
+
+Windows:
+
+Reinstall Python with Tkinter enabled  
+
+Permission error:
+
+   sudo python "multi zip extractor.py"  
 
 ---
 
 ## 🧑‍💻 Author
 
-**Sam Wilson**  
+Sam Wilson  
 
-🔗 GitHub: https://github.com/rsamwilson2323-cloud  
-🔗 LinkedIn: https://www.linkedin.com/in/sam-wilson-14b554385  
+GitHub: https://github.com/rsamwilson2323-cloud  
+LinkedIn: https://www.linkedin.com/in/sam-wilson-14b554385  
 
 ---
 
@@ -98,4 +171,14 @@ This project is licensed under the MIT License.
 
 ## 🌟 Support
 
-If you like this project, give it a ⭐ on GitHub!
+If you like this project:
+
+⭐ Star the repository  
+🍴 Fork it  
+📢 Share it  
+
+---
+
+## ❤️ Contribution
+
+Pull requests are welcome. Open an issue first for major changes.
